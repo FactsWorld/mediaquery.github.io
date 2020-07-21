@@ -1,0 +1,73 @@
+*{   
+   margin: 0;
+   padding:0;
+ }
+
+body{   
+      background-color: black;
+    }
+
+.parent{ 
+         box-sizing:border-box;   /*imp*/
+         width:100%;
+         height: 50vh;            /*imp*/
+         display:flex;
+         justify-content:space-around;
+         align-items: center;
+       }
+
+h1{  
+     margin-top:25px;
+     text-align: center;
+     text-transform: capitalize;    /*imp*/
+  }
+
+.son{ 
+	  font-size:25px;
+	  color:white;  
+      line-height:1.7;          /*important.... jo hum font: mein use karte hain after / symbol*/
+      width:50%;
+      text-align:justify;        /*important*/
+      padding:0 10%;
+      box-sizing: border-box;
+    } 
+
+.daughter{   
+           width:50%;
+           padding:0; 
+           text-align: center;
+         }
+
+.daughter a{  
+             text-align:center;        
+           }            
+
+.daughter img{   
+                width:450px;
+             }
+
+/*-------------------------media phones---------------------------*/
+@media (max-width: 768px) 
+{   
+  h1{
+      color:blue;
+    }
+
+  .parent{     
+             display:block;                 /*jo phle hi mentioned hai wo batane ki dobara zarurat nhi hai, its been inherit.*/
+         }                                  /*bas jo value change karni hai wo mention krne ki zarurat hai*/
+  .daughter{
+              width:100%;
+           }
+  .son{  
+         margin-left:2%;
+         width:100%;
+      }         
+  .daughter img{  
+                 width:100%;
+                 height:auto;              /*responsive image*/
+
+               }
+}
+
+
